@@ -15,12 +15,12 @@ package "oracle-java8-installer" do
   action :install
 end
 
--- Run commnand
+- Run commnand
 sudo chef-client --local-mode java8.rb
 
--- Create cookbook
+- Create cookbook
 sudo chef generate cookbook chef_install_java
 
--- Run cookbook
+- Run cookbook
 sudo chef-client --local-mode --runlist 'recipe[chef_install_java]'
 
